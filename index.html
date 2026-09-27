@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Barbers & Salon | Premium Grooming in Gangtok</title>
+    <meta name="description" content="Experience premium grooming, precision haircuts, and luxury styling at Aura Barbers & Salon in Gangtok, Sikkim. Open 9 AM to 10 PM. Book your appointment today.">
+    <meta name="keywords" content="salon Gangtok, best barber Sikkim, premium grooming, haircuts Gangtok, beard styling, Aura Barbers">
+    <meta name="author" content="Aura Barbers & Salon">
+    <link rel="canonical" href="https://aurasalongangtok.com/">
+    
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:title" content="Aura Barbers & Salon | Premium Grooming in Gangtok">
+    <meta property="og:description" content="Precision haircuts and luxury styling in the heart of the Himalayas.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aurasalongangtok.com/">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?q=80&w=1200&auto=format&fit=crop">
+
+    <!-- Fonts: Inter for UI/Body, Playfair Display for Premium Headings -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-bg': '#0d0d0d',      /* Deep premium black */
+                        'brand-dark': '#141414',    /* Slightly elevated dark for cards */
+                        'brand-taupe': '#c5a07a',   /* Muted luxury gold/bronze */
+                        'brand-light': '#f5f5f5',   /* Crisp off-white for text */
+                        'brand-accent': '#262626'   /* Subtle borders and dividers */
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                    },
+                    spacing: {
+                        '128': '32rem',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HairSalon",
+      "name": "Aura Barbers & Salon",
+      "image": "https://images.unsplash.com/photo-1585747860715-2ba37e788b70?q=80&w=1200&auto=format&fit=crop",
+      "@id": "https://aurasalongangtok.com",
+      "url": "https://aurasalongangtok.com",
+      "telephone": "+918101314114",
+      "email": "workhomemega@gmail.com",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "MG Marg area",
+        "addressLocality": "Gangtok",
+        "addressRegion": "Sikkim",
+        "postalCode": "737101",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 27.3314,
+        "longitude": 88.6138
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+        ],
+        "opens": "09:00",
+        "closes": "22:00"
+      },
+      "sameAs": [
+        "https://wa.me/918101314114"
+      ]
+    }
+    </script>
+
+    <style>
+        /* Custom base styles for ultra-premium dark feel */
+        body {
+            background-color: #0d0d0d;
+            color: #f5f5f5;
+            overflow-x: hidden;
+        }
+        
+        .hero-bg {
+            /* Darkened mountain background gradient for perfect text contrast */
+            background-image: linear-gradient(to right, rgba(13, 13, 13, 0.95) 0%, rgba(13, 13, 13, 0.75) 50%, rgba(13, 13, 13, 0.3) 100%), url('https://images.unsplash.com/photo-1544253163-95886ea53eb1?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-referrer;
+        }
+
+        .glass-card {
+            background: rgba(20, 20, 20, 0.75);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(197, 160, 122, 0.15); /* Subtle gold border */
+        }
+
+        /* Dark mode scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0d0d0d; }
+        ::-webkit-scrollbar-thumb { background: #c5a07a; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #a88865; }
+    </style>
+</head>
+<body class="antialiased selection:bg-brand-taupe selection:text-brand-bg">
+
+    <header id="navbar" class="fixed w-full top-0 z-50 transition-all duration-300 py-4 px-6 md:px-12 bg-transparent">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="flex items-center gap-2 group" aria-label="Aura Homepage">
+                <i class="fa-solid fa-scissors text-xl text-brand-taupe group-hover:text-brand-light transition"></i>
+                <span class="font-serif font-semibold text-xl tracking-wider text-brand-light">AURA</span>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex gap-8 items-center text-sm font-medium text-brand-light/90">
+                <a href="#services" class="hover:text-brand-taupe transition">Services</a>
+                <a href="#about" class="hover:text-brand-taupe transition">About Us</a>
+                <a href="#gallery" class="hover:text-brand-taupe transition">Gallery</a>
+                <div class="h-4 w-[1px] bg-brand-light/20 mx-2"></div>
+                <span class="text-xs font-semibold tracking-widest text-brand-taupe">GTK</span>
+                <a href="#contact" class="border-b border-brand-light/50 hover:text-brand-taupe hover:border-brand-taupe transition pb-1 font-semibold uppercase tracking-wide">Contact Us</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobileMenuBtn" class="md:hidden text-2xl text-brand-light" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Overlay -->
+    <div id="mobileNav" class="fixed inset-0 bg-brand-bg z-40 transform translate-x-full transition-transform duration-300 flex flex-col justify-center items-center gap-8 md:hidden">
+        <a href="#services" class="text-2xl font-serif mobile-link text-brand-light hover:text-brand-taupe">Services</a>
+        <a href="#about" class="text-2xl font-serif mobile-link text-brand-light hover:text-brand-taupe">About Us</a>
+        <a href="#gallery" class="text-2xl font-serif mobile-link text-brand-light hover:text-brand-taupe">Gallery</a>
+        <a href="#contact" class="text-2xl font-serif mobile-link text-brand-taupe">Contact Us</a>
+        <div class="mt-8 flex flex-col items-center gap-4 text-sm text-brand-light/70">
+            <a href="tel:+918101314114" class="hover:text-brand-taupe"><i class="fa-solid fa-phone mr-2"></i> 8101314114</a>
+            <a href="https://wa.me/918101314114" class="hover:text-brand-taupe"><i class="fa-brands fa-whatsapp mr-2"></i> WhatsApp</a>
+        </div>
+    </div>
+
+    <main>
+        <section class="relative min-h-[90vh] lg:min-h-screen hero-bg flex flex-col justify-center pt-24 pb-32 lg:pb-0 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-6 md:px-12 w-full relative z-10 lg:flex items-center">
+                
+                <!-- Hero Left: Typography & CTA -->
+                <div class="lg:w-7/12 pt-10 lg:pt-0">
+                    <h1 class="font-serif text-6xl md:text-7xl lg:text-[7.5rem] leading-[0.9] tracking-tight text-brand-light">
+                        THE <br>
+                        PERFECT <br>
+                        LOOK<sup class="text-3xl lg:text-5xl text-brand-taupe">&reg;</sup>
+                    </h1>
+                    <div class="mt-8 flex items-center gap-4">
+                        <span class="text-brand-light/70 text-lg border-l-2 border-brand-taupe pl-4">We craft custom styles.</span>
+                    </div>
+                    <div class="mt-10">
+                        <!-- Dark mode button: Gold background, Dark text -->
+                        <a href="#contact" class="inline-block bg-brand-taupe text-brand-bg rounded-full px-10 py-4 text-sm font-bold tracking-wide hover:bg-brand-light transition shadow-[0_0_20px_rgba(197,160,122,0.3)] transform hover:-translate-y-1">
+                            BOOK NOW
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Right: Overlapping Floating Card -->
+                <div class="lg:w-5/12 mt-16 lg:mt-0 relative h-[400px] lg:h-[500px]">
+                    <div class="glass-card rounded-[2rem] p-8 shadow-2xl lg:absolute lg:-right-4 lg:top-1/2 lg:-translate-y-1/2 w-full max-w-md mx-auto lg:w-[450px]">
+                        
+                        <div class="flex gap-2 mb-6">
+                            <span class="border border-brand-light/20 text-brand-light/90 text-xs px-3 py-1 rounded-full">Haircut</span>
+                            <span class="border border-brand-light/20 text-brand-light/90 text-xs px-3 py-1 rounded-full">Beard</span>
+                            <span class="bg-brand-taupe text-brand-bg font-semibold text-xs px-3 py-1 rounded-full">Spa</span>
+                        </div>
+                        
+                        <h2 class="font-serif text-3xl mb-2 text-brand-light">Unique style &<br>precision</h2>
+                        <p class="text-sm text-brand-light/60 mb-8">From classic cuts to modern trends.</p>
+                        
+                        <!-- Floating Image Inside Card -->
+                        <div class="relative w-full h-48 rounded-2xl overflow-hidden shadow-inner group">
+                            <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?q=80&w=800&auto=format&fit=crop" alt="Premium Salon Interior" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-700 opacity-90">
+                            <!-- Play button mimic -->
+                            <div class="absolute inset-0 flex items-center justify-center bg-black/20">
+                                <div class="w-12 h-12 bg-brand-bg/80 border border-brand-taupe/50 rounded-full flex items-center justify-center text-brand-taupe backdrop-blur shadow-lg group-hover:bg-brand-taupe group-hover:text-brand-bg transition">
+                                    <i class="fa-solid fa-play ml-1"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="absolute bottom-0 left-0 w-full z-20 hidden lg:block">
+                <div class="max-w-7xl mx-auto px-6 md:px-12 flex items-end">
+                    
+                    <!-- Left Solid Block (Gold) -->
+                    <div class="bg-brand-taupe text-brand-bg rounded-tr-3xl p-10 w-4/12 shadow-xl relative overflow-hidden">
+                        <h3 class="font-serif text-3xl mb-4 relative z-10 font-semibold">We use best<br>products!</h3>
+                        <p class="text-sm text-brand-bg/80 relative z-10 font-medium">Working with verified top-tier brands.</p>
+                        <!-- Decorative aesthetic element -->
+                        <i class="fa-solid fa-spray-can text-8xl absolute -bottom-4 -right-4 text-brand-bg/10 transform -rotate-12"></i>
+                    </div>
+
+                    <!-- Right Glass Block (Dark) -->
+                    <div class="bg-brand-dark/95 backdrop-blur-md border-t border-brand-accent p-10 w-8/12 rounded-tl-3xl shadow-[0_-10px_40px_-15px_rgba(0,0,0,0.5)] flex justify-between items-center -ml-6 relative z-0">
+                        
+                        <!-- Client stat -->
+                        <div class="flex items-center gap-4">
+                            <div class="flex -space-x-3">
+                                <img class="w-10 h-10 rounded-full border-2 border-brand-dark object-cover" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop" alt="Customer">
+                                <img class="w-10 h-10 rounded-full border-2 border-brand-dark object-cover" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&h=100&fit=crop" alt="Customer">
+                            </div>
+                            <div>
+                                <div class="font-serif text-3xl italic font-medium leading-none text-brand-light">10k+</div>
+                                <div class="text-xs text-brand-light/50 tracking-wider">Happy Clients</div>
+                            </div>
+                        </div>
+
+                        <!-- Tagline -->
+                        <div class="text-right">
+                            <h4 class="font-medium text-lg tracking-wide uppercase max-w-[280px] leading-snug text-brand-light">We combine mountain serenity & style</h4>
+                            <a href="#about" class="inline-block mt-2 text-xs font-bold border-b border-brand-light/30 pb-0.5 hover:text-brand-taupe hover:border-brand-taupe transition text-brand-light/70">LEARN MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mobile representation of the bottom banner -->
+        <section class="lg:hidden w-full bg-brand-bg">
+            <div class="bg-brand-taupe text-brand-bg p-8">
+                <h3 class="font-serif text-3xl mb-2 font-semibold">We use best products!</h3>
+                <p class="text-sm text-brand-bg/80 font-medium">Working with verified top-tier brands.</p>
+            </div>
+            <div class="p-8 border-b border-brand-accent flex flex-col gap-6 bg-brand-dark">
+                 <div class="flex items-center gap-4">
+                    <div class="flex -space-x-3">
+                        <img class="w-10 h-10 rounded-full border-2 border-brand-dark object-cover" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop" alt="Customer">
+                        <img class="w-10 h-10 rounded-full border-2 border-brand-dark object-cover" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&h=100&fit=crop" alt="Customer">
+                    </div>
+                    <div>
+                        <div class="font-serif text-3xl italic font-medium leading-none text-brand-light">10k+</div>
+                        <div class="text-xs text-brand-light/50 tracking-wider">Happy Clients</div>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-medium text-lg tracking-wide uppercase leading-snug mb-2 text-brand-light">We combine mountain serenity & style</h4>
+                    <a href="#about" class="inline-block text-xs font-bold border-b border-brand-light/30 pb-0.5 text-brand-light/70 hover:text-brand-taupe">LEARN MORE</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="py-24 bg-brand-bg relative">
+            <div class="max-w-7xl mx-auto px-6 md:px-12">
+                <div class="text-center mb-16 max-w-2xl mx-auto">
+                    <span class="text-brand-taupe text-sm font-bold tracking-widest uppercase mb-2 block">Our Expertise</span>
+                    <h2 class="font-serif text-4xl md:text-5xl text-brand-light">Signature Services</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service 1 -->
+                    <div class="group bg-brand-dark border border-brand-light/5 rounded-3xl p-8 hover:bg-brand-taupe transition duration-500 ease-in-out cursor-pointer">
+                        <div class="w-14 h-14 bg-brand-bg border border-brand-light/10 rounded-2xl flex items-center justify-center text-brand-taupe mb-6 group-hover:scale-110 group-hover:bg-brand-bg/20 group-hover:border-transparent group-hover:text-brand-bg transition-all">
+                            <i class="fa-solid fa-scissors text-xl"></i>
+                        </div>
+                        <h3 class="font-serif text-2xl mb-3 text-brand-light group-hover:text-brand-bg transition">Precision Haircut</h3>
+                        <p class="text-brand-light/60 text-sm group-hover:text-brand-bg/80 transition mb-6">Tailored haircuts designed to complement your face shape and personal style.</p>
+                        <span class="font-medium border-b border-brand-light/20 text-brand-light/80 group-hover:border-brand-bg/40 group-hover:text-brand-bg pb-1 text-sm transition">From ₹500</span>
+                    </div>
+
+                    <!-- Service 2: FIXED ICON (Using fa-soap for Hot Towel lather) -->
+                    <div class="group bg-brand-dark border border-brand-light/5 rounded-3xl p-8 hover:bg-brand-taupe transition duration-500 ease-in-out cursor-pointer">
+                        <div class="w-14 h-14 bg-brand-bg border border-brand-light/10 rounded-2xl flex items-center justify-center text-brand-taupe mb-6 group-hover:scale-110 group-hover:bg-brand-bg/20 group-hover:border-transparent group-hover:text-brand-bg transition-all">
+                            <!-- Swapped to a highly compatible free icon representing shave lather/soap -->
+                            <i class="fa-solid fa-soap text-xl"></i>
+                        </div>
+                        <h3 class="font-serif text-2xl mb-3 text-brand-light group-hover:text-brand-bg transition">Hot Towel Shave</h3>
+                        <p class="text-brand-light/60 text-sm group-hover:text-brand-bg/80 transition mb-6">A classic, relaxing hot towel shave using premium lathers and precision techniques.</p>
+                        <span class="font-medium border-b border-brand-light/20 text-brand-light/80 group-hover:border-brand-bg/40 group-hover:text-brand-bg pb-1 text-sm transition">From ₹400</span>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="group bg-brand-dark border border-brand-light/5 rounded-3xl p-8 hover:bg-brand-taupe transition duration-500 ease-in-out cursor-pointer">
+                        <div class="w-14 h-14 bg-brand-bg border border-brand-light/10 rounded-2xl flex items-center justify-center text-brand-taupe mb-6 group-hover:scale-110 group-hover:bg-brand-bg/20 group-hover:border-transparent group-hover:text-brand-bg transition-all">
+                            <i class="fa-solid fa-spa text-xl"></i>
+                        </div>
+                        <h3 class="font-serif text-2xl mb-3 text-brand-light group-hover:text-brand-bg transition">Facial & Spa</h3>
+                        <p class="text-brand-light/60 text-sm group-hover:text-brand-bg/80 transition mb-6">Rejuvenating skin treatments to cleanse, exfoliate, and hydrate after a long day.</p>
+                        <span class="font-medium border-b border-brand-light/20 text-brand-light/80 group-hover:border-brand-bg/40 group-hover:text-brand-bg pb-1 text-sm transition">From ₹800</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-24 bg-brand-dark border-y border-brand-accent">
+            <div class="max-w-7xl mx-auto px-6 md:px-12 lg:flex items-center gap-16">
+                <div class="lg:w-1/2 relative">
+                    <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?q=80&w=1000&auto=format&fit=crop" alt="Barber at work in salon" class="rounded-[2rem] shadow-2xl z-10 relative opacity-90">
+                    <div class="absolute -bottom-10 -right-10 w-full h-full border-2 border-brand-taupe/30 rounded-[2rem] z-0 hidden md:block"></div>
+                    <!-- Badge overlay -->
+                    <div class="absolute -left-6 top-1/4 bg-brand-bg border border-brand-accent p-6 rounded-2xl shadow-2xl z-20 hidden md:block">
+                        <div class="text-brand-taupe text-4xl font-serif font-bold mb-1">5+</div>
+                        <div class="text-xs uppercase tracking-widest font-semibold text-brand-light/80">Years in<br>Gangtok</div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 mt-16 lg:mt-0">
+                    <span class="text-brand-taupe text-sm font-bold tracking-widest uppercase mb-2 block">Our Story</span>
+                    <h2 class="font-serif text-4xl md:text-5xl text-brand-light mb-6">Elevating grooming in the Himalayas.</h2>
+                    <p class="text-brand-light/60 leading-relaxed mb-6">
+                        Located in the beautiful city of Gangtok, Aura is more than just a barbershop. It's a sanctuary for those who appreciate the finer details of grooming. We blend traditional techniques with modern trends to create a signature look that is uniquely yours.
+                    </p>
+                    <p class="text-brand-light/60 leading-relaxed mb-8">
+                        Our master barbers are dedicated to providing a premium experience, utilizing top-tier products in an environment designed for ultimate relaxation. 
+                    </p>
+                    <div class="flex items-center gap-6">
+                        <a href="tel:+918101314114" class="flex items-center gap-3 font-semibold text-brand-light hover:text-brand-taupe group transition">
+                            <div class="w-12 h-12 rounded-full border border-brand-light/20 flex items-center justify-center group-hover:border-brand-taupe group-hover:bg-brand-taupe group-hover:text-brand-bg transition">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            Call Us Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-24 bg-brand-bg">
+            <div class="max-w-7xl mx-auto px-6 md:px-12">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 bg-brand-dark border border-brand-light/5 rounded-[2rem] overflow-hidden shadow-2xl">
+                    
+                    <!-- Contact Info -->
+                    <div class="p-10 md:p-16 flex flex-col justify-center">
+                        <span class="text-brand-taupe text-sm font-bold tracking-widest uppercase mb-2 block">Visit Us</span>
+                        <h2 class="font-serif text-4xl text-brand-light mb-10">Book your time.</h2>
+
+                        <div class="space-y-6">
+                            <!-- Location -->
+                            <div class="flex items-start gap-4">
+                                <div class="mt-1 text-brand-taupe text-xl"><i class="fa-solid fa-location-dot"></i></div>
+                                <div>
+                                    <h4 class="font-bold text-lg text-brand-light/90">Location</h4>
+                                    <p class="text-brand-light/60 text-sm">MG Marg Area,<br>Gangtok, Sikkim 737101</p>
+                                </div>
+                            </div>
+                            <!-- Hours -->
+                            <div class="flex items-start gap-4">
+                                <div class="mt-1 text-brand-taupe text-xl"><i class="fa-solid fa-clock"></i></div>
+                                <div>
+                                    <h4 class="font-bold text-lg text-brand-light/90">Opening Hours</h4>
+                                    <p class="text-brand-light/60 text-sm">Everyday: 9:00 AM - 10:00 PM</p>
+                                </div>
+                            </div>
+                            <!-- Contact Links -->
+                            <div class="flex items-start gap-4">
+                                <div class="mt-1 text-brand-taupe text-xl"><i class="fa-solid fa-address-book"></i></div>
+                                <div>
+                                    <h4 class="font-bold text-lg text-brand-light/90">Get in touch</h4>
+                                    <a href="tel:+918101314114" class="block text-brand-light/60 text-sm hover:text-brand-taupe transition">Phone: +91 8101314114</a>
+                                    <a href="https://wa.me/918101314114" target="_blank" rel="noopener noreferrer" class="block text-brand-light/60 text-sm hover:text-[#25D366] transition">WhatsApp: +91 8101314114</a>
+                                    <a href="mailto:workhomemega@gmail.com" class="block text-brand-light/60 text-sm hover:text-brand-taupe transition">workhomemega@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-10">
+                            <a href="https://wa.me/918101314114" target="_blank" rel="noopener noreferrer" class="inline-block bg-brand-taupe text-brand-bg rounded-full px-8 py-4 text-sm font-bold tracking-wide hover:bg-brand-light transition shadow-[0_0_15px_rgba(197,160,122,0.2)] w-full text-center">
+                                MESSAGE ON WHATSAPP
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Google Maps Iframe (Filtered for Dark Mode blend) -->
+                    <div class="min-h-[400px] lg:min-h-full w-full bg-[#0a0a0a] relative">
+                        <!-- CSS filter added to make the map match the dark theme better -->
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14217.185332612745!2d88.60155255476317!3d27.336496667104084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e6a56a5805eafb%3A0x73d6132c501c8f20!2sGangtok%2C%20Sikkim!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0; filter: invert(90%) hue-rotate(180deg) contrast(1.1);" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Aura Salon Google Maps Location">
+                        </iframe>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-[#050505] text-brand-light py-12 border-t border-brand-accent">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-2 group cursor-pointer">
+                <i class="fa-solid fa-scissors text-xl text-brand-taupe"></i>
+                <span class="font-serif font-semibold text-xl tracking-wider">AURA</span>
+            </div>
+            
+            <div class="text-sm text-brand-light/40 text-center md:text-left">
+                &copy; <span id="year"></span> Aura Barbers & Salon. Gangtok, Sikkim. All rights reserved.
+            </div>
+
+            <div class="flex gap-4 text-xl">
+                <a href="#" aria-label="Instagram" class="text-brand-light/40 hover:text-brand-taupe transition"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="Facebook" class="text-brand-light/40 hover:text-brand-taupe transition"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://wa.me/918101314114" aria-label="WhatsApp" class="text-brand-light/40 hover:text-[#25D366] transition"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Set dynamic year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Navbar scroll effect adjusted for dark mode
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-brand-bg/95', 'backdrop-blur-md', 'shadow-md', 'border-b', 'border-brand-accent', 'py-3');
+                navbar.classList.remove('bg-transparent', 'py-4');
+            } else {
+                navbar.classList.add('bg-transparent', 'py-4');
+                navbar.classList.remove('bg-brand-bg/95', 'backdrop-blur-md', 'shadow-md', 'border-b', 'border-brand-accent', 'py-3');
+            }
+        });
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('mobileMenuBtn');
+        const mobileNav = document.getElementById('mobileNav');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+        let isMenuOpen = false;
+
+        function toggleMenu() {
+            isMenuOpen = !isMenuOpen;
+            if (isMenuOpen) {
+                mobileNav.classList.remove('translate-x-full');
+                menuBtn.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+                document.body.style.overflow = 'hidden'; // prevent background scrolling
+            } else {
+                mobileNav.classList.add('translate-x-full');
+                menuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        menuBtn.addEventListener('click', toggleMenu);
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if(isMenuOpen) toggleMenu();
+            });
+        });
+    </script>
+</body>
+</html>
